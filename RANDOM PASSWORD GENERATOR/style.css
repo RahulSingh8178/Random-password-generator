@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #000000;
+    padding: 10px;
+}
+
+/* Main Container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Password Display */
+.password-display {
+    font-size: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    word-break: break-word; /* Ensures long passwords wrap */
+    text-align: center;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+    flex-grow: 1; /* Allows buttons to stretch */
+    min-width: 120px;
+    text-align: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#generate-btn {
+    background-color: #000000f7;
+    color: white;
+}
+
+#copy-btn {
+    background-color: #000000;
+    color: white;
+}
+
+/* Error Message */
+#error-message {
+    color: rgb(253, 7, 7);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Settings Section */
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Labels & Inputs */
+.settings label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+/* Range Input */
+#length {
+    width: 100%;
+}
+
+/* Length Display */
+#length-value {
+    font-weight: bold;
+}
+
+/* Custom Checkbox */
+.settings input[type="checkbox"] {
+    appearance: none; /* Removes default styles */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.settings input[type="checkbox"]:checked {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+/* Checkbox Container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .password-display {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+        min-width: 100px;
+    }
+
+    .settings label {
+        font-size: 14px;
+    }
+}

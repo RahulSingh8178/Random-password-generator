@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Password Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>RANDOM PASSWORD GENERATOR</h1>
+    <div class="password-display" id="password-display"></div>
+    
+    <div class="settings">
+        <label for="length">Length:<b></label>
+        <input type="range" id="length" min="8" max="32", value="16">
+        <span id="length-value">16</span>
+        <br><br><br>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="uppercase" checked>
+            <span class="checkmark"></span>
+            <label for="uppercase">Uppercase: </label>
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="lowercase" >
+            <span class="checkmark"></span>
+            <label for="lowercase">Lowercase: </label>
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="numbers" >
+            <span class="checkmark"></span>
+            <label for="numbers">Numbers: </label>
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="symbols" >
+            <span class="checkmark"></span>
+            <label for="symbols">Symbols: </label>
+        </div>
+
+    </div>
+    <br><br>
+    <button id="generate-btn">Generate Password</button>
+    <button id="copy-btn">Copy</button>
+    <div id="error-message">
+    Please select at least one character type.
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
